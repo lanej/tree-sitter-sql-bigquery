@@ -9,7 +9,7 @@ SELECT foo(args)
 
 FROM table1
 -- <- keyword
---   ^ variable
+--   ^ module
 LEFT JOIN table2 ON table1.a = table2.a
 -- <- keyword
 --    ^ keyword

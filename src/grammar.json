@@ -4493,6 +4493,10 @@
               "name": "identifier"
             },
             {
+              "type": "STRING",
+              "value": ","
+            },
+            {
               "type": "CHOICE",
               "members": [
                 {
@@ -4503,15 +4507,6 @@
                   },
                   "named": false,
                   "value": "DAY"
-                },
-                {
-                  "type": "ALIAS",
-                  "content": {
-                    "type": "PATTERN",
-                    "value": "[hH][oO][uU][rR]"
-                  },
-                  "named": false,
-                  "value": "HOUR"
                 },
                 {
                   "type": "ALIAS",
