@@ -701,7 +701,8 @@ module.exports = grammar({
           choice(kw('DATETIME_TRUNC'), kw('TIMESTAMP_TRUNC'), kw('DATE_TRUNC')),
           '(',
           $.identifier,
-          choice(kw('DAY'), kw('HOUR'), kw('HOUR'), kw('MONTH'), kw('YEAR')),
+          ',',
+          choice(kw('DAY'), kw('HOUR'), kw('MONTH'), kw('YEAR')),
           ')',
         ),
         seq(

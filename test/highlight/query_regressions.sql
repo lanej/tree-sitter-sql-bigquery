@@ -15,3 +15,13 @@ SELECT
   _TaBlE_sUfFiX
 -- ^ variable.builtin
 FROM events;
+
+CREATE TABLE deliveries (cohort_date DATE NOT NULL, carrier STRING)
+--                                        ^ keyword
+PARTITION BY DATE_TRUNC(cohort_date, MONTH)
+--           ^ function.builtin
+--                                   ^ keyword
+CLUSTER BY carrier
+-- <- keyword
+OPTIONS(require_partition_filter = TRUE);
+-- <- keyword

@@ -1,7 +1,7 @@
 CREATE TABLE mydataset.newtable
 -- <- keyword
 ---     ^ keyword
----            ^ variable
+---            ^ module
 (
   x INT64 OPTIONS(description="An optional INTEGER field"),
 --^ variable
